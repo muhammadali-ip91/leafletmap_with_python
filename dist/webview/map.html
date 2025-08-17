@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leaflet Map with Right-Click Menu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="leaflet.draw.css" />
+    <link rel="stylesheet" href="Control.Geocoder.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet-measure/dist/leaflet-measure.css" /> -->
+    <!-- <link rel="stylesheet" href="pickr.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" /> -->
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <!-- Marker right-click menu -->
+    <div id="marker-menu" class="context-menu">
+        <div onclick="deleteMarker()">Delete Marker</div>
+    </div>
+
+    <!-- Map right-click menu -->
+    <div id="map-menu" class="context-menu">
+        <div onclick="startPolyline()">Draw Polyline</div>
+        <div onclick="reloadMap()">Reload Map</div>
+        
+    </div>
+
+    <!-- Polyline right-click menu -->
+    <div id="polyline-menu" class="context-menu">
+        <div onclick="deletePolyline()">Delete Polyline</div>
+    </div>
+    
+
+    <script src="leaflet.js"></script>
+    <script src="leaflet.draw.js"></script>
+    <script src="Control.Geocoder.js"></script>
+    <script src="leaflet-geometryutil.js"></script>
+    <script src="map.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet-measure/dist/leaflet-measure.js"></script> -->
+    <!-- <script src="pickr.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script> -->
+    <!-- <script src="https://jscolor.com/releases/2.4.6/jscolor.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+
+[2025-08-08 10:06:22] Traceback (most recent call last):
+  File "c:/leaflet/main.py", line 274, in <module>
+    main()
+  File "c:/leaflet/main.py", line 148, in main
+    close_btn_icon = tk.PhotoImage(file=style.close_icon_image)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4064, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4009, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't open "./webview/images1/cross.png": no such file or directory
+
+
+[2025-08-08 10:06:47] Traceback (most recent call last):
+  File "c:/leaflet/main.py", line 274, in <module>
+    main()
+  File "c:/leaflet/main.py", line 148, in main
+    close_btn_icon = tk.PhotoImage(file=style.close_icon_image)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4064, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4009, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't open "./webview/images1/cross.png": no such file or directory
+
+
+[2025-08-08 10:07:10] Traceback (most recent call last):
+  File "c:/leaflet/main.py", line 274, in <module>
+    main()
+  File "c:/leaflet/main.py", line 148, in main
+    close_btn_icon = tk.PhotoImage(file=style.close_icon_image)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4064, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4009, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't open "./webview/images1/cross.png": no such file or directory
+
+
+[2025-08-08 10:09:15] Traceback (most recent call last):
+  File "c:/leaflet/main.py", line 274, in <module>
+    main()
+  File "c:/leaflet/main.py", line 148, in main
+    close_btn_icon = tk.PhotoImage(file=style.close_icon_image)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4064, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\NRTC\AppData\Local\Programs\Python\Python38\lib\tkinter\__init__.py", line 4009, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't open "webview\images1\cross.png": no such file or directory
+
+
+[2025-08-15 21:46:06] Traceback (most recent call last):
+  File "c:\leaflet\main2.py", line 422, in <module>
+    main()
+  File "c:\leaflet\main2.py", line 339, in main
+    pin_btn.place(x=10, y=50, width=140)
+  File "C:\Users\Alpha\AppData\Local\Programs\Python\Python38\lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+
+
+[2025-08-15 21:59:00] Traceback (most recent call last):
+  File "task.pyx", line 85, in cefpython_py38.PyTaskRunnable
+  File "c:\leaflet\main2.py", line 314, in <lambda>
+    browser and browser.GetMainFrame().ExecuteJavaScript(
+AttributeError: 'cefpython_py38.PyFrame' object has no attribute 'ExecuteJavaScript'
+
+
+[2025-08-15 21:59:58] Traceback (most recent call last):
+  File "display_handler.pyx", line 123, in cefpython_py38.DisplayHandler_OnConsoleMessage
+TypeError: OnConsoleMessage() got an unexpected keyword argument 'level'
+
+
+[2025-08-15 22:15:15] Traceback (most recent call last):
+  File "c:\leaflet\main2.py", line 539, in <module>
+    main()
+  File "c:\leaflet\main2.py", line 235, in main
+    menu_bar_frame.place(x=-171, y=0, width=171, relheight=1.0)
+  File "C:\Users\Alpha\AppData\Local\Programs\Python\Python38\lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+
+
+[2025-08-16 12:03:26] Traceback (most recent call last):
+  File "c:\leaflet\main2.py", line 627, in <module>
+    main()
+  File "c:\leaflet\main2.py", line 481, in main
+    theme_selector.place(x=10, y=44, width=151)
+  File "C:\Users\Alpha\AppData\Local\Programs\Python\Python38\lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+
+
+[2025-08-17 10:22:52] Traceback (most recent call last):
+  File "c:\leaflet\main.py", line 352, in <module>
+    main()
+  File "c:\leaflet\main.py", line 141, in main
+    browser = create_browser()
+  File "c:\leaflet\main.py", line 130, in create_browser
+    bindings.SetObject("cefPythonBindings", JSBindings(browser_local))
+NameError: free variable 'JSBindings' referenced before assignment in enclosing scope
+
+
+[2025-08-17 10:23:08] Traceback (most recent call last):
+  File "c:\leaflet\main.py", line 352, in <module>
+    main()
+  File "c:\leaflet\main.py", line 141, in main
+    browser = create_browser()
+  File "c:\leaflet\main.py", line 130, in create_browser
+    bindings.SetObject("cefPythonBindings", JSBindings(browser_local))
+NameError: free variable 'JSBindings' referenced before assignment in enclosing scope
+
+
+[2025-08-17 10:41:26] Traceback (most recent call last):
+  File "c:\leaflet\main2.py", line 316, in <module>
+    main()
+  File "c:\leaflet\main2.py", line 253, in main
+    pin_btn.place(x=10, y=50, width=140)
+  File "C:\Users\Alpha\AppData\Local\Programs\Python\Python38\lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+

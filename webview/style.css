@@ -1,0 +1,205 @@
+html, body, #map {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f2efe9 0%, #f2efe9 100%);
+}
+#map { height: 100vh; }
+.leaflet-tilelayer-colorpicker { z-index: 99999 !important; }
+
+/* ======= CONTEXT MENU ======= */
+.context-menu {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    z-index: 1000;
+    padding: 8px 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,201,252,0.08);
+    backdrop-filter: blur(8px);
+    animation: fadeInMenu 0.18s;
+    transition: box-shadow 0.2s;
+}
+
+@keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(10px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+
+.context-menu div {
+    padding: 10px 22px;
+    cursor: pointer;
+    color: #232526;
+    font-size: 15px;
+    border: none;
+    background: none;
+    transition: background 0.18s, color 0.18s;
+    border-radius: 8px;
+    margin: 0 6px;
+}
+
+.context-menu div:hover {
+    background: linear-gradient(90deg, #00C9FC 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,201,252,0.10);
+}
+
+/* ======= LEAFLET POPUP ======= */
+.leaflet-popup-content-wrapper {
+    background: rgba(40, 44, 52, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 201, 252, 0.18), 0 1.5px 4px rgba(118,75,162,0.10);
+    border: 2px solid rgba(255,255,255,0.10);
+    backdrop-filter: blur(12px);
+    padding: 0;
+    overflow: hidden;
+    animation: fadeInPopup 0.22s;
+}
+
+@keyframes fadeInPopup {
+    from { opacity: 0; transform: scale(0.97);}
+    to   { opacity: 1; transform: scale(1);}
+}
+
+.leaflet-popup-content {
+    margin: 20px 22px 18px 22px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.leaflet-popup-content button {
+    background: linear-gradient(90deg, #00C9FC 0%, #764ba2 100%);
+    border: none;
+    color: #fff;
+    padding: 9px 20px;
+    margin: 6px 3px 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.22s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 2px 8px rgba(0, 201, 252, 0.18);
+    outline: none;
+}
+
+.leaflet-popup-content button:hover {
+    background: linear-gradient(90deg, #764ba2 0%, #00C9FC 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(0, 201, 252, 0.22);
+    animation: buttonPulse 0.7s infinite;
+}
+
+.leaflet-popup-content button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 201, 252, 0.13);
+}
+
+.leaflet-popup-content b {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+    font-weight: 700;
+}
+
+.leaflet-popup-close-button {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    transition: all 0.18s;
+    margin: 8px 8px 0 0;
+    box-shadow: 0 2px 8px rgba(0,201,252,0.10);
+}
+
+.leaflet-popup-close-button:hover {
+    background: rgba(0,201,252,0.22);
+    color: #FFD700;
+    transform: scale(1.12);
+}
+
+.leaflet-popup-tip {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 2px solid rgba(255,255,255,0.10);
+    box-shadow: 0 2px 8px rgba(0, 201, 252, 0.10);
+}
+
+.leaflet-popup-content div {
+    margin-bottom: 10px;
+}
+
+.leaflet-popup {
+    margin-bottom: 24px;
+}
+
+/* ======= RESPONSIVE POPUP ======= */
+@media (max-width: 768px) {
+    .leaflet-popup-content {
+        font-size: 13px;
+        margin: 14px 10px 12px 10px;
+    }
+    .leaflet-popup-content button {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+    .context-menu {
+        min-width: 120px;
+        font-size: 13px;
+    }
+}
+
+/* ======= ANIMATIONS ======= */
+@keyframes popupBounceIn {
+    0%   { opacity: 0; transform: scale(0.85) translateY(20px);}
+    60%  { opacity: 1; transform: scale(1.05) translateY(-6px);}
+    80%  { transform: scale(0.98) translateY(2px);}
+    100% { opacity: 1; transform: scale(1) translateY(0);}
+}
+
+@keyframes buttonPulse {
+    0%   { box-shadow: 0 2px 8px rgba(0,201,252,0.18);}
+    50%  { box-shadow: 0 6px 24px rgba(0,201,252,0.32);}
+    100% { box-shadow: 0 2px 8px rgba(0,201,252,0.18);}
+}
+
+@keyframes menuSlideIn {
+    from { opacity: 0; transform: translateX(-30px);}
+    to   { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes floatUpDown {
+    0%   { transform: translateY(0);}
+    50%  { transform: translateY(-6px);}
+    100% { transform: translateY(0);}
+}
+
+/* ======= APPLY ANIMATIONS ======= */
+
+/* Popup bounce-in effect */
+.leaflet-popup-content-wrapper {
+    animation: popupBounceIn 0.38s cubic-bezier(.4,0,.2,1);
+}
+
+/* Context menu slide-in effect */
+.context-menu {
+    animation: menuSlideIn 0.22s cubic-bezier(.4,0,.2,1);
+}
+
+/* Button pulse effect on hover */
+.leaflet-popup-content button:hover {
+    animation: buttonPulse 0.7s infinite;
+}
+
+/* Floating effect for context menu items */
+.context-menu div:hover {
+    animation: floatUpDown 0.7s infinite;
+}

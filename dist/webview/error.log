@@ -1,0 +1,16 @@
+
+[2025-08-07 13:48:15] Traceback (most recent call last):
+  File "custom2.py", line 305, in <module>
+    main()
+  File "custom2.py", line 158, in main
+    menu_bar_frame = ctk.CTkFrame(map_frame, fg_color=style.menu_bar_frame_colour)
+AttributeError: module 'style' has no attribute 'menu_bar_frame_colour'
+
+
+[2025-08-07 13:51:37] Traceback (most recent call last):
+  File "custom2.py", line 360, in <module>
+    main()
+  File "custom2.py", line 46, in main
+    "log_severity": cef.LogSeverity.INFO,
+AttributeError: module 'cefpython3.cefpython_py38' has no attribute 'LogSeverity'
+
